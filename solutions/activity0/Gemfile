@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+gem 'test-kitchen', '~> 1.0'
+gem 'berkshelf' , '< 3.0.0'
+gem 'busser'
+
+group :integration do
+  gem 'bats'
+  gem 'serverspec'
+  gem 'kitchen-vagrant', '~> 0.11'
+end
